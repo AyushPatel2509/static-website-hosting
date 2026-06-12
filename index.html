@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayush Patel | AWS Cloud Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+html{scroll-behavior:smooth}
+body{
+background:linear-gradient(135deg,#0f172a,#111827,#1e293b);
+color:#fff;
+}
+nav{
+position:fixed;width:100%;top:0;
+display:flex;justify-content:space-between;
+padding:18px 8%;background:rgba(0,0,0,.3);
+backdrop-filter:blur(10px);z-index:1000}
+nav a{color:#fff;text-decoration:none;margin:0 12px}
+.logo{font-size:28px;font-weight:700;color:#ff9900}
+.hero{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 8%;
+background:
+radial-gradient(circle at top right,#ff990033,transparent 30%);
+}
+.hero-text{max-width:600px}
+.hero h3{color:#ff9900;font-size:24px}
+.hero h1{font-size:64px}
+.hero p{margin:20px 0;color:#ddd;line-height:1.8}
+.btn{
+display:inline-block;padding:14px 35px;
+background:#ff9900;color:#fff;text-decoration:none;
+border-radius:30px;font-weight:600;
+transition:.3s}
+.btn:hover{transform:translateY(-5px)}
+.profile{
+width:320px;height:320px;border-radius:50%;
+background:linear-gradient(45deg,#ff9900,#ffcc66);
+padding:6px;
+box-shadow:0 0 40px #ff990055;
+}
+.profile img{
+width:100%;height:100%;border-radius:50%;object-fit:cover;
+}
+section{padding:90px 8%}
+.title{text-align:center;font-size:42px;color:#ff9900;margin-bottom:50px}
+.about,.card{
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(10px);
+padding:30px;border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.2)}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px}
+.card{transition:.3s}
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 35px #ff990044}
+.card h3{color:#ff9900;margin-bottom:15px}
+.skills span{
+display:inline-block;
+padding:8px 15px;
+margin:8px;
+background:#ff9900;
+border-radius:20px}
+.timeline{
+border-left:3px solid #ff9900;
+padding-left:20px}
+.timeline div{margin:25px 0}
+.contact{
+text-align:center}
+footer{
+background:#000;padding:30px;text-align:center;color:#aaa}
+@media(max-width:900px){
+.hero{flex-direction:column;text-align:center;padding-top:100px}
+.hero h1{font-size:48px}
+.profile{width:250px;height:250px;margin-top:30px}
+}
+</style>
+</head>
+<body>
+<nav>
+<div class="logo">Ayush Patel</div>
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#journey">Journey</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<section class="hero">
+<div class="hero-text">
+<h3>☁ AWS Cloud Developer</h3>
+<h1>Ayush Patel</h1>
+<p>
+Passionate AWS Cloud Developer with hands-on experience building scalable,
+secure and highly available cloud solutions using EC2, S3, VPC, IAM,
+CloudWatch, RDS and Linux.
+</p>
+<a href="Ayushpatelcvp.pdf" class="btn">View Resume</a>
+</div>
+<div class="profile">
+<img src="ayushphoto.png">
+</div>
+</section>
+
+<section id="about">
+<h2 class="title">About Me</h2>
+<div class="about">
+<p>
+I am an aspiring AWS Cloud & DevOps Engineer who enjoys solving infrastructure
+problems and deploying real-world applications on AWS. I have practical
+experience with AWS services, Linux administration and networking.
+</p>
+</div>
+</section>
+
+<section id="skills">
+<h2 class="title">Technical Skills</h2>
+<div class="card skills">
+<span>AWS EC2</span>
+<span>Amazon S3</span>
+<span>IAM</span>
+<span>VPC</span>
+<span>RDS</span>
+<span>CloudWatch</span>
+<span>Linux</span>
+<span>Git</span>
+<span>GitHub</span>
+<span>Load Balancer</span>
+<span>SNS</span>
+<span>Bash</span>
+<span>MySQL</span>
+<span>Networking</span>
+</div>
+</section>
+
+<section id="projects">
+<h2 class="title">Featured AWS Projects</h2>
+<div class="grid">
+<div class="card"><h3>S3 Static Website</h3><p>Hosted responsive website with bucket policies and public access.</p></div>
+<div class="card"><h3>CloudWatch Monitoring</h3><p>Created alarms, dashboards and SNS notifications for EC2.</p></div>
+<div class="card"><h3>RDS MySQL</h3><p>Configured secure database and EC2 connectivity.</p></div>
+<div class="card"><h3>3-Tier Architecture</h3><p>ALB + EC2 + RDS deployment across AWS infrastructure.</p></div>
+<div class="card"><h3>IAM Security</h3><p>Users, Groups, Roles, Policies and MFA implementation.</p></div>
+<div class="card"><h3>AWS Web App</h3><p>EC2 hosting with S3 logs and CloudWatch alerts.</p></div>
+</div>
+</section>
+
+<section id="journey">
+<h2 class="title">My Journey</h2>
+<div class="timeline">
+<div><h3>Education</h3><p>Bachelor's Degree in IT.</p></div>
+<div><h3>Cloud Learning</h3><p>Building practical AWS projects and exploring DevOps.</p></div>
+<div><h3>Current Focus</h3><p>Terraform, Docker, Kubernetes and CI/CD.</p></div>
+</div>
+</section>
+
+<section id="contact">
+<h2 class="title">Contact Me</h2>
+<div class="card contact">
+<h3>Ayush Patel</h3>
+<p>📧 ayushrpatel2025@gmail.com</p>
+<p>💻 GitHub: github.com/AyushPatel2509</p>
+<p>💼 LinkedIn: linkedin.com/in/ayupatel</p>
+<p>📱 +91-9870067708</p>
+</div>
+</section>
+
+<footer>
+<h3>Designed & Built by Ayush Patel ☁</h3>
+<p>AWS Cloud Developer Portfolio © 2026</p>
+</footer>
+</body>
+</html>
